@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Fundamentos Maquetado Reto1</title>
+</head>
+<body>
+  <!-- Rating state start -->
+  <section class="container-1">
+    <div class="box-1" id="box-1">
+        <div class="star-circle">
+            <img class="star-img" src = "./images/icon-star.svg" alt="Star Icon"/>
+        </div>
+        <h1 class="box-1-title">How did we do?</h1>
+        <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+        </p>
+        <form class="rating-section" id="mainForm" name="mainForm">
+            <input class="rating-btn 1" onclick="getValue(value)" type="button" name="rate" value="1"/>
+            <input class="rating-btn 2" onclick="getValue(value)" type="button" name="rate" value="2"/>
+            <input class="rating-btn 3" onclick="getValue(value)" type="button" name="rate" value="3"/>
+            <input class="rating-btn 4" onclick="getValue(value)" type="button" name="rate" value="4"/>
+            <input class="rating-btn 5" onclick="getValue(value)" type="button" name="rate" value="5"/>
+        </form>
+        <a href="#" onclick="" class="submit-btn" id="btn-sumbit">submit</a>
+    </div>
+    <div class="box-2" id="box-2">
+        <a href="#" onclick="returnElement()" class="return-btn">X</a>
+        <img class="thanks-img" src = "./images/illustration-thank-you.svg" alt="Star Icon"/>
+        <p class="selected-rate"><span id="result"></span></p>
+        <h1 class="thanks-title">Thank you!</h1>
+        <p class="thanks-msg">
+            We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+  </section>
+  <section class="footer__credits">
+    <p>
+      Built by <a href="https://www.linkedin.com/in/noraelisacamacho/" class="footer__link"> Nora Camacho </a> for
+      <a href="https://www.academlo.com" class="footer__link"> Academlo </a> Bootcamp: Programación Web Full-Stack y Ciencias de Computación.
+    </p>
+  </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.2.4/firebase-app.js"></script>
+  /* TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries*/
+  <script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
